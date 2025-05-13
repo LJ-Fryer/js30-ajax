@@ -15,15 +15,6 @@ html {
 input {
   width: 100%;
   padding: 20px;
-  color: #757575;
-}
-ul,
-li {
-  margin: 30px 0 0 0;
-  padding: 0;
-  list-style: none;
-  color: #f7f7f7;
-  font-weight: 320;
 }
 
 .search-form {
@@ -43,7 +34,36 @@ input.search {
   z-index: 2;
   border-radius: 5px;
   font-size: 40px;
+  color: #757575;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19);
+}
+
+ul.suggestions {
+  margin: 10px 0 0;
+  padding: 0;
+  position: relative;
+}
+.suggestions li {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #d8d8d8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
+  background-color: #f7f7f7;
+  list-style: none;
+  color: #757575;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+li.instructions {
+  background: #47b3c6;
+  border: none;
+  box-shadow: none;
+  justify-self: center;
+  text-transform: none;
+  font-size: 25px;
+  color: #f7f7f7;
 }
 
 .hl {
